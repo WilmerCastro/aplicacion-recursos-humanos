@@ -1,0 +1,16 @@
+﻿@using FormHtmlHelpers.MisHelpers;
+@{
+    ViewBag.Title = "Persona";
+}
+
+@Html.HacerTitulo("Datos")
+
+@Html.Label("Cedula: ") @Model.cedula
+@Html.Label("Nombre: ") @Model.nombre
+@Html.Label("Apellido: ") @Model.apellido
+@Html.Label("Edad: ") @Model.edad
+@Html.Label("Telefono: ") @Model.telefono
+@Html.Label("Correo Electronico: ") @Model.correo
+@Html.Label("Genero: ") @Model.genero
+@Html.Label("Estado civil: ") @Model.estado_civil
+@Html.Label("Hobbies: ") @Model.hobby

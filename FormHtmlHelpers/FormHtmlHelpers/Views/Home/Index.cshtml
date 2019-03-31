@@ -1,0 +1,18 @@
+﻿@using FormHtmlHelpers.MisHelpers;
+@{
+    ViewBag.Title = "Index";
+}
+
+@Html.HacerTitulo("Bienvenido al formulario desde htmlHelpers!")
+<br />
+<button type="button" onclick="location.href='@Url.Action("Index", "Formulario")'" style="margin-right:5%;  text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #FBBC05;
+    border-radius: 6px;
+    border: 2px solid #9A7D0A;">
+    Entrar
+</button>
+

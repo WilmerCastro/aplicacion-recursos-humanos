@@ -1,0 +1,96 @@
+﻿@using FormHtmlHelpers.MisHelpers;
+@model FormHtmlHelpers.Models.Persona
+@{
+                /**/
+
+                ViewBag.Title = "Index";
+}
+
+@Html.HacerTitulo("Formulario")
+
+@using (Html.BeginForm("Persona", "Formulario", FormMethod.Post))
+{
+    @Html.Label("Cedula")
+    <br />
+    @Html.TextBox("cedula", null, new { @class = "textbox", placeholder = "        Ingrese la Cédula" })
+    <br />
+    @Html.Label("Nombre")
+    <br />
+    @Html.TextBox("nombre", null, new { @class = "textbox", placeholder = "        Ingrese el Nombre" })
+    <br />
+    @Html.Label("Apellido")
+    <br />
+    @Html.TextBox("apellido", null, new { @class = "textbox", placeholder = "        Ingrese el apellido" })
+    <br />
+    @Html.Label("Edad")
+    <br />
+    @Html.TextBox("edad", null, new { @class = "textbox", placeholder = "        Ingrese la edad" })
+    <br />
+    @Html.Label("Telefono")
+    <br />
+    @Html.TextBox("telefono", null, new { @class = "textbox", placeholder = "        Ingrese el telefono" })
+    <br />
+    @Html.Label("Correo Electronico")
+    <br />
+    @Html.TextBox("correo", null, new { @class = "textbox", placeholder = "        Ingrese el correo" })
+    <br />
+    <br />
+    @Html.Label("Genero")
+    @Html.DropDownList("genero", new List<SelectListItem> {
+    new SelectListItem{Text="Masculino",Value="masculino"},
+    new SelectListItem{Text="Femenino",Value="femenino"}
+    })
+    <br />
+    @Html.Label("Soltero/a ")
+    @Html.RadioButton("estado_civil", "soltero")
+    <br />
+    @Html.Label("Casado/a ")
+    @Html.RadioButton("estado_civil", "casado")
+    <br />
+    @Html.Label("Viudo/a ")
+    @Html.RadioButton("estado_civil", "viudo")
+    <br />
+    @Html.Label("Union Lire ")
+    @Html.RadioButton("estado_civil", "union libre")
+    <br />
+    <br />
+
+    @Html.Label("Hobbies", new { style = "font-size:20px" })
+    <br />
+
+
+    foreach (var item in ViewBag.ItemList)
+    {
+
+        <li class="list-group-item">
+
+            <div class="checkbox">
+                <input type="checkbox" id="Check_@item.idhobby" checked="@item.chekeado" />
+                <label for="Check_@item.idhobby">@item.hobby</label>
+            </div>
+
+        </li>
+    }
+
+    @*@Html.Label("Correr ")
+    @Html.CheckBox("hobby", "- correr -")
+    <br />
+    @Html.Label("Tocar un instrumento ")
+    @Html.CheckBox("hobby", "- tocar un instrumento -")
+    <br />
+    @Html.Label("Jugar Video Juegos ")
+    @Html.CheckBox("hobby", "- Jugar Video Juegos -")
+    <br />
+    @Html.Label("Leer Libros ")
+    @Html.CheckBox("hobby", "- Leer Libros -")*@
+    <br />
+    <br />
+    <input type="submit" value="Agregar" class="btn btn-default" />
+
+}
+
+
+
+
+
+
