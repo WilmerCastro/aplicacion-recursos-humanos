@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="empleadosSet" EntityType="Model1.empleados" />
+    <EntitySet Name="departamentosSet" EntityType="Model1.departamentos" />
+    <EntitySet Name="cargosSet" EntityType="Model1.cargos" />
+    <EntitySet Name="nominasSet" EntityType="Model1.nominas" />
+    <EntitySet Name="salidaSet" EntityType="Model1.salida" />
+    <EntitySet Name="permisosSet" EntityType="Model1.permisos" />
+    <EntitySet Name="licenciasSet" EntityType="Model1.licencias" />
+    <EntitySet Name="vacacionesSet" EntityType="Model1.vacaciones" />
+  </EntityContainer>
+  <EntityType Name="empleados">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigoempleado" Type="String" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" />
+    <Property Name="apellido" Type="String" Nullable="false" />
+    <Property Name="telefono" Type="String" Nullable="false" />
+    <Property Name="departamento" Type="String" Nullable="false" />
+    <Property Name="cargo" Type="String" Nullable="false" />
+    <Property Name="fechaingreso" Type="String" Nullable="false" />
+    <Property Name="salario" Type="Int32" Nullable="false" />
+    <Property Name="estatus" Type="String" Nullable="false" DefaultValue="Activo" />
+  </EntityType>
+  <EntityType Name="departamentos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigodepartamento" Type="String" Nullable="false" />
+    <Property Name="nombre" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="cargos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cargo" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="nominas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="año" Type="Int32" Nullable="false" />
+    <Property Name="mes" Type="String" Nullable="false" />
+    <Property Name="montototal" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="salida">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empleado" Type="String" Nullable="false" />
+    <Property Name="tiposalida" Type="String" Nullable="false" />
+    <Property Name="motivo" Type="String" Nullable="false" />
+    <Property Name="fechasalida" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="permisos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empleado" Type="String" Nullable="false" />
+    <Property Name="desde" Type="String" Nullable="false" />
+    <Property Name="hasta" Type="String" Nullable="false" />
+    <Property Name="comentarios" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="licencias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empleado" Type="String" Nullable="false" />
+    <Property Name="desde" Type="String" Nullable="false" />
+    <Property Name="hasta" Type="String" Nullable="false" />
+    <Property Name="motivo" Type="String" Nullable="false" />
+    <Property Name="comentarios" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vacaciones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="empleado" Type="String" Nullable="false" />
+    <Property Name="desde" Type="String" Nullable="false" />
+    <Property Name="hasta" Type="String" Nullable="false" />
+    <Property Name="correspondiente" Type="String" Nullable="false" />
+    <Property Name="comentarios" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>
