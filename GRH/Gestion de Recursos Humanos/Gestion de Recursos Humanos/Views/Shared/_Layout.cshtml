@@ -1,29 +1,127 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+
+
+        .drop ul ul {
+            display: none;
+        }
+
+        .drop ul li:hover ul {
+            display: block;
+        }
+
+        .drop ul li {
+            float: left;
+        }
+
+            .drop ul li a {
+                color: #ffffff;
+                display: block;
+                padding: 10px 10px;
+                position: relative;
+                text-decoration: none;
+                font-size: large;
+            }
+
+        .drop ul ul li {
+            float: none;
+            position: relative;
+        }
+
+        .drop ul li {
+            position: relative;
+        }
+
+        .drop ul ul {
+            top: 38px;
+            position: absolute;
+            background: #222222;
+            padding: 0;
+        }
+
+        .drop ul {
+            list-style: none;
+            position: relative;
+            display: inline-table;
+            background: #222222;
+            padding: 0 20px;
+            font-size: large;
+        }
+
+            .drop ul ul li a {
+                padding: 10px 10px;
+                color: #fff;
+                text-align: center;
+            }
+
+        .drop nul nul li a:hover {
+            background: #cfc5c5;
+            color: #000000;
+        }
+
+        .drop ul li:hover {
+            background: #cfc5c5;
+            color: #000000;
+        }
+
+        .drop ul li a:hover {
+            color: #000000;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-               
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Empleados", "Index", "empleados")</li>
-                    <li>@Html.ActionLink("Departamentos", "Index", "Departamentos")</li>
-                    <li>@Html.ActionLink("Cargos", "Index", "Cargos")</li>
+
+            <div class="drop">
+                <ul>
+                    <li>
+                        <a href="">Módulo de Mantenimiento</a>
+                        <ul>
+                            <li><a href="http://localhost:60642/empleados/Index">Empleado</a></li>
+                            <li><a href="http://localhost:60642/departamentos/Index">Departamento</a></li>
+                            <li><a href="http://localhost:60642/cargos/Index">Cargos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Módulo de Procesos</a>
+                        <ul>
+                            <li><a href="http://localhost:60642/empleados/calculoNomina">Cálculo de Nómina</a></li>
+                            <li><a href="">Salida de Empleados</a></li>
+                            <li><a href="">Vacaciones</a></li>
+                            <li><a href="">Permisos</a></li>
+                            <li><a href="">Licencias</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Módulo de Informes</a>
+                        <ul>
+                            <li><a href="">Ver Nóminas</a></li>
+                            <li><a href="">Ver Empleados Activos</a></li>
+                            <li><a href="">Ver Empleados Inactivos</a></li>
+                            <li><a href="">Ver Departamentos</a></li>
+                            <li><a href="">Ver Cargos</a></li>
+                            <li><a href="">Ver Entradas de Empleados por mes</a></li>
+                            <li><a href="">Ver Salidas de Empleados por mes</a></li>
+                            <li><a href="">Ver Permisos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Información</a>
+                        <ul>
+                            <li><a href="">Sobre Nosotros</a></li>
+                            <li><a href="">Contáctenos</a></li>
+                            <li><a href="">Salir</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>

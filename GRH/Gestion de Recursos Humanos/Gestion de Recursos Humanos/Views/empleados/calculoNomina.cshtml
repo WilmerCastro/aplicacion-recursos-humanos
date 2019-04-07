@@ -1,0 +1,54 @@
+﻿@model Gestion_de_Recursos_Humanos.Models.nominas
+
+
+
+
+@{
+    /**/
+
+    ViewBag.Title = "calculoNomina";
+}
+
+<h2>calcular Nomina</h2>
+
+<div>
+    
+    <table class="table table-striped">
+        
+            <tr>
+
+                <th class="col-sm-2">
+                    @Html.DisplayName("Año en curso")
+                </th>
+                <th class="col-sm-2">
+                    @Html.DisplayName("Mes en curso")
+                </th>
+                <th class="col-sm-2">
+                    @Html.DisplayName("Monto Total")
+                </th>
+            </tr>
+       
+      
+            <tr>
+                
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.año)
+                </td>
+                
+           
+           
+                
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.mes)
+                </td>
+                
+           
+                <td class="col-sm-10">
+                    @Html.DisplayFor(model => model.montototal)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+

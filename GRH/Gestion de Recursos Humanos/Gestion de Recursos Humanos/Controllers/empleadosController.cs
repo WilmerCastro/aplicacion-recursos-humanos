@@ -129,7 +129,15 @@ namespace Gestion_de_Recursos_Humanos.Controllers
                 return Json(true, JsonRequestBehavior.AllowGet);
             }
         }
+        public ActionResult calculoNomina(nominas p)
+        {
+            p.año = DateTime.Today.Year;
+            p.mes = DateTime.Today.Month.ToString();
+            var nom = from m in db.empleadosSet where (m.estatus.Equals("Activo")) select m.salario;
+            p.montototal = nom.Sum();
 
+            return View(p);
+        }
 
         protected override void Dispose(bool disposing)
         {

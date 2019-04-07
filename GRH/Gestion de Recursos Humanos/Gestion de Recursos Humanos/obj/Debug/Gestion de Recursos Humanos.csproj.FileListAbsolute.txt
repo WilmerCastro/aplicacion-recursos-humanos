@@ -89,3 +89,94 @@ C:\Users\Wilmer\source\repos\Gestion de Recursos Humanos\Gestion de Recursos Hum
 C:\Users\Wilmer\source\repos\Gestion de Recursos Humanos\Gestion de Recursos Humanos\obj\Debug\Gestion de Recursos Humanos.csproj.CopyComplete
 C:\Users\Wilmer\source\repos\Gestion de Recursos Humanos\Gestion de Recursos Humanos\obj\Debug\Gestion de Recursos Humanos.dll
 C:\Users\Wilmer\source\repos\Gestion de Recursos Humanos\Gestion de Recursos Humanos\obj\Debug\Gestion de Recursos Humanos.pdb
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Gestion de Recursos Humanos.dll.config
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Gestion de Recursos Humanos.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Gestion de Recursos Humanos.pdb
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\csc.exe
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\csc.exe.config
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\csc.rsp
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\csi.exe
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\csi.exe.config
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\csi.rsp
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.AppContext.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Console.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.IO.Compression.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Security.Claims.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.ValueTuple.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\vbc.exe
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\vbc.exe.config
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\vbc.rsp
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\VBCSCompiler.exe
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Antlr3.Runtime.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\EntityFramework.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\EntityFramework.SqlServer.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Newtonsoft.Json.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.Helpers.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.Mvc.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.Optimization.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.Razor.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.WebPages.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.WebPages.Razor.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\WebGrease.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\EntityFramework.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\EntityFramework.SqlServer.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.Helpers.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.Mvc.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.Optimization.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.Razor.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.WebPages.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Web.WebPages.Razor.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Newtonsoft.Json.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Antlr3.Runtime.pdb
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\es\System.Web.Razor.resources.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\obj\Debug\Gestion de Recursos Humanos.csprojAssemblyReference.cache
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\obj\Debug\Gestion de Recursos Humanos.csproj.CoreCompileInputs.cache
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\obj\Debug\Gestion de Recursos Humanos.csproj.CopyComplete
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\obj\Debug\Gestion de Recursos Humanos.dll
+C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\obj\Debug\Gestion de Recursos Humanos.pdb

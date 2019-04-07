@@ -47,7 +47,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="año" Type="Int32" Nullable="false" />
     <Property Name="mes" Type="String" Nullable="false" />
-    <Property Name="montototal" Type="String" Nullable="false" />
+    <Property Name="montototal" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="salida">
     <Key>

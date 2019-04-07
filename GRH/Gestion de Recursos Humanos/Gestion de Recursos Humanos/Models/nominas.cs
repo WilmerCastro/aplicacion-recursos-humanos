@@ -17,6 +17,6 @@ namespace Gestion_de_Recursos_Humanos.Models
         public int Id { get; set; }
         public int año { get; set; }
         public string mes { get; set; }
-        public string montototal { get; set; }
+        public int montototal { get; set; }
     }
 }

@@ -250,6 +250,7 @@
     <Content Include="Views\cargos\Details.cshtml" />
     <Content Include="Views\cargos\Edit.cshtml" />
     <Content Include="Views\cargos\Index.cshtml" />
+    <Content Include="Views\empleados\calculoNomina.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

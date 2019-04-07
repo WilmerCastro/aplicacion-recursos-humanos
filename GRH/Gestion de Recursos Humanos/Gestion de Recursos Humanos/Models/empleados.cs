@@ -23,11 +23,10 @@ namespace Gestion_de_Recursos_Humanos.Models
         }
     
         public int Id { get; set; }
-
         [Required]
         [StringLength(50)]
         [Remote("IsProductNameExist", "empleados", AdditionalFields = "Id",
-                ErrorMessage = "Ya hay un empleado con ese código")]
+               ErrorMessage = "Este codigo de empleado ya esta en uso")]
         public string codigoempleado { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }

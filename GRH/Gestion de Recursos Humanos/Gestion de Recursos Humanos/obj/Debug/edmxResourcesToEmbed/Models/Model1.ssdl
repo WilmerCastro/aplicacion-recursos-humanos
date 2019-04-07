@@ -47,7 +47,7 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="año" Type="int" Nullable="false" />
     <Property Name="mes" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="montototal" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="montototal" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="salidaSet">
     <Key>
