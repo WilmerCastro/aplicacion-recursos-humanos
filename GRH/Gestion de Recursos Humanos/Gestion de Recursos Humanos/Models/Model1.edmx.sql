@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/07/2019 13:21:01
--- Generated from EDMX file: C:\Users\Wilmer\source\repos\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\Models\Model1.edmx
+-- Date Created: 04/08/2019 05:29:05
+-- Generated from EDMX file: C:\Users\yo\GRH\Gestion de Recursos Humanos\Gestion de Recursos Humanos\Models\Model1.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -85,7 +85,7 @@ GO
 CREATE TABLE [dbo].[nominasSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [año] int  NOT NULL,
-    [mes] nvarchar(max)  NOT NULL,
+    [mes] int  NOT NULL,
     [montototal] int  NOT NULL
 );
 GO
@@ -104,8 +104,8 @@ GO
 CREATE TABLE [dbo].[permisosSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [empleado] nvarchar(max)  NOT NULL,
-    [desde] nvarchar(max)  NOT NULL,
-    [hasta] nvarchar(max)  NOT NULL,
+    [desde] datetime  NOT NULL,
+    [hasta] datetime  NOT NULL,
     [comentarios] nvarchar(max)  NOT NULL
 );
 GO
@@ -114,8 +114,8 @@ GO
 CREATE TABLE [dbo].[licenciasSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [empleado] nvarchar(max)  NOT NULL,
-    [desde] nvarchar(max)  NOT NULL,
-    [hasta] nvarchar(max)  NOT NULL,
+    [desde] datetime  NOT NULL,
+    [hasta] datetime  NOT NULL,
     [motivo] nvarchar(max)  NOT NULL,
     [comentarios] nvarchar(max)  NOT NULL
 );
@@ -125,9 +125,9 @@ GO
 CREATE TABLE [dbo].[vacacionesSet] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [empleado] nvarchar(max)  NOT NULL,
-    [desde] nvarchar(max)  NOT NULL,
-    [hasta] nvarchar(max)  NOT NULL,
-    [correspondiente] nvarchar(max)  NOT NULL,
+    [desde] datetime  NOT NULL,
+    [hasta] datetime  NOT NULL,
+    [correspondiente] int  NOT NULL,
     [comentarios] nvarchar(max)  NOT NULL
 );
 GO

@@ -13,6 +13,87 @@ namespace Gestion_de_Recursos_Humanos.Controllers
     public class empleadosController : Controller
     {
         private Model1Container db = new Model1Container();
+       
+        [HttpGet]
+        public ActionResult VerNomina(string fechaaño, string fechames)
+        {
+
+            var nomina = from s in db.nominasSet
+                           select s;
+
+            
+
+            if ((!String.IsNullOrEmpty(fechaaño)))
+            {
+                DateTime newFecha = DateTime.Parse(fechaaño);
+
+                nomina = nomina.Where(s => s.año.Equals(newFecha));
+            }
+
+            if ((!String.IsNullOrEmpty(fechames)))
+            {
+                DateTime newFecha = DateTime.Parse(fechames);
+
+                nomina = nomina.Where(s => s.mes.Equals(newFecha));
+            }
+
+            return View(nomina.ToList());
+        }
+
+        [HttpGet]
+        public ActionResult VerEmpleados(string nombree, string departamentto)
+        {
+
+            var empleaddo = from s in db.empleadosSet
+                         select s;
+
+
+
+            if ((!String.IsNullOrEmpty(nombree)))
+            {
+
+                empleaddo = empleaddo.Where(s => s.nombre.Contains(nombree));
+            }
+
+            if ((!String.IsNullOrEmpty(departamentto)))
+            {
+
+                empleaddo = empleaddo.Where(s => s.departamento.Contains(departamentto));
+            }
+
+            return View(empleaddo.ToList().Where(s=>s.estatus.Equals("Activo")));
+        }
+
+      
+        public ActionResult VerSalidas()
+        {
+
+            return View(db.salidaSet.ToList());
+        }
+
+        public ActionResult VerEntradasMes()
+        {
+
+            return View(db.empleadosSet.ToList().Where(s => s.estatus.Equals("Activo")));
+        }
+
+
+        public ActionResult VerPermisos(string empleado1)
+        {
+
+            var permiso = from s in db.permisosSet
+                            select s;
+
+
+
+            if ((!String.IsNullOrEmpty(empleado1)))
+            {
+
+                permiso = permiso.Where(s => s.empleado.Contains(empleado1));
+            }
+
+            return View(permiso.ToList());
+        }
 
         // GET: empleados
         public ActionResult Index()
@@ -31,6 +112,7 @@ namespace Gestion_de_Recursos_Humanos.Controllers
             if (empleados == null)
             {
                 return HttpNotFound();
+                
             }
             return View(empleados);
         }
@@ -132,7 +214,7 @@ namespace Gestion_de_Recursos_Humanos.Controllers
         public ActionResult calculoNomina(nominas p)
         {
             p.año = DateTime.Today.Year;
-            p.mes = DateTime.Today.Month.ToString();
+            p.mes = DateTime.Today.Month;
             var nom = from m in db.empleadosSet where (m.estatus.Equals("Activo")) select m.salario;
             p.montototal = nom.Sum();
 

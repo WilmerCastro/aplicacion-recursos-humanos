@@ -8,7 +8,7 @@
         <EntityTypeShape EntityType="Model1.empleados" Width="1.5" PointX="1.375" PointY="1" />
         <EntityTypeShape EntityType="Model1.departamentos" Width="1.5" PointX="3.25" PointY="1.25" />
         <EntityTypeShape EntityType="Model1.cargos" Width="1.5" PointX="5.25" PointY="1.25" />
-        <EntityTypeShape EntityType="Model1.nominas" Width="1.5" PointX="7.25" PointY="1.25" />
+        <EntityTypeShape EntityType="Model1.nominas" Width="1.5" PointX="7.25" PointY="1.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Model1.salida" Width="1.5" PointX="10.125" PointY="1.375" />
         <EntityTypeShape EntityType="Model1.permisos" Width="1.5" PointX="4.125" PointY="3.875" />
         <EntityTypeShape EntityType="Model1.licencias" Width="1.5" PointX="6.625" PointY="4.125" />

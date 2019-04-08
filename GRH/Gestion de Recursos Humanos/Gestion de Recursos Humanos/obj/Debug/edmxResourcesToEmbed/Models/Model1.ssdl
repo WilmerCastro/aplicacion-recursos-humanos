@@ -46,7 +46,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="año" Type="int" Nullable="false" />
-    <Property Name="mes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="mes" Type="int" Nullable="false" />
     <Property Name="montototal" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="salidaSet">
@@ -65,8 +65,8 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="empleado" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="desde" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="hasta" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desde" Type="datetime" Nullable="false" />
+    <Property Name="hasta" Type="datetime" Nullable="false" />
     <Property Name="comentarios" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="licenciasSet">
@@ -75,8 +75,8 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="empleado" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="desde" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="hasta" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desde" Type="datetime" Nullable="false" />
+    <Property Name="hasta" Type="datetime" Nullable="false" />
     <Property Name="motivo" Type="nvarchar(max)" Nullable="false" />
     <Property Name="comentarios" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
@@ -86,9 +86,9 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="empleado" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="desde" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="hasta" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="correspondiente" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desde" Type="datetime" Nullable="false" />
+    <Property Name="hasta" Type="datetime" Nullable="false" />
+    <Property Name="correspondiente" Type="int" Nullable="false" />
     <Property Name="comentarios" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
 </Schema>

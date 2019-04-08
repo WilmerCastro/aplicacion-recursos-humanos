@@ -251,6 +251,11 @@
     <Content Include="Views\cargos\Edit.cshtml" />
     <Content Include="Views\cargos\Index.cshtml" />
     <Content Include="Views\empleados\calculoNomina.cshtml" />
+    <Content Include="Views\empleados\VerNomina.cshtml" />
+    <Content Include="Views\empleados\VerEmpleados.cshtml" />
+    <Content Include="Views\empleados\VerSalidas.cshtml" />
+    <Content Include="Views\empleados\VerPermisos.cshtml" />
+    <Content Include="Views\empleados\VerEntradasMes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

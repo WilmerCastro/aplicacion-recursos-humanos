@@ -46,7 +46,7 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="año" Type="Int32" Nullable="false" />
-    <Property Name="mes" Type="String" Nullable="false" />
+    <Property Name="mes" Type="Int32" Nullable="false" />
     <Property Name="montototal" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="salida">
@@ -65,8 +65,8 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="empleado" Type="String" Nullable="false" />
-    <Property Name="desde" Type="String" Nullable="false" />
-    <Property Name="hasta" Type="String" Nullable="false" />
+    <Property Name="desde" Type="DateTime" Nullable="false" />
+    <Property Name="hasta" Type="DateTime" Nullable="false" />
     <Property Name="comentarios" Type="String" Nullable="false" />
   </EntityType>
   <EntityType Name="licencias">
@@ -75,8 +75,8 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="empleado" Type="String" Nullable="false" />
-    <Property Name="desde" Type="String" Nullable="false" />
-    <Property Name="hasta" Type="String" Nullable="false" />
+    <Property Name="desde" Type="DateTime" Nullable="false" />
+    <Property Name="hasta" Type="DateTime" Nullable="false" />
     <Property Name="motivo" Type="String" Nullable="false" />
     <Property Name="comentarios" Type="String" Nullable="false" />
   </EntityType>
@@ -86,9 +86,9 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="empleado" Type="String" Nullable="false" />
-    <Property Name="desde" Type="String" Nullable="false" />
-    <Property Name="hasta" Type="String" Nullable="false" />
-    <Property Name="correspondiente" Type="String" Nullable="false" />
+    <Property Name="desde" Type="DateTime" Nullable="false" />
+    <Property Name="hasta" Type="DateTime" Nullable="false" />
+    <Property Name="correspondiente" Type="Int32" Nullable="false" />
     <Property Name="comentarios" Type="String" Nullable="false" />
   </EntityType>
 </Schema>

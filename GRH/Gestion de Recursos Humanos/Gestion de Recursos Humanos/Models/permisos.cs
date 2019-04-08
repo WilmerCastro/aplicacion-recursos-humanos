@@ -16,8 +16,8 @@ namespace Gestion_de_Recursos_Humanos.Models
     {
         public int Id { get; set; }
         public string empleado { get; set; }
-        public string desde { get; set; }
-        public string hasta { get; set; }
+        public System.DateTime desde { get; set; }
+        public System.DateTime hasta { get; set; }
         public string comentarios { get; set; }
     }
 }

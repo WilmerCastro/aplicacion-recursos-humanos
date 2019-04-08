@@ -11,9 +11,7 @@ namespace Gestion_de_Recursos_Humanos.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.Web.Mvc;
-
+    
     public partial class empleados
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -23,10 +21,6 @@ namespace Gestion_de_Recursos_Humanos.Models
         }
     
         public int Id { get; set; }
-        [Required]
-        [StringLength(50)]
-        [Remote("IsProductNameExist", "empleados", AdditionalFields = "Id",
-               ErrorMessage = "Este codigo de empleado ya esta en uso")]
         public string codigoempleado { get; set; }
         public string nombre { get; set; }
         public string apellido { get; set; }

@@ -51,7 +51,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="año" Type="int" Nullable="false" />
-    <Property Name="mes" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="mes" Type="int" Nullable="false" />
     <Property Name="montototal" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="salidaSet">
@@ -70,8 +70,8 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="empleado" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="desde" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="hasta" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desde" Type="datetime" Nullable="false" />
+    <Property Name="hasta" Type="datetime" Nullable="false" />
     <Property Name="comentarios" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="licenciasSet">
@@ -80,8 +80,8 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="empleado" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="desde" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="hasta" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desde" Type="datetime" Nullable="false" />
+    <Property Name="hasta" Type="datetime" Nullable="false" />
     <Property Name="motivo" Type="nvarchar(max)" Nullable="false" />
     <Property Name="comentarios" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
@@ -91,9 +91,9 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="empleado" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="desde" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="hasta" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="correspondiente" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="desde" Type="datetime" Nullable="false" />
+    <Property Name="hasta" Type="datetime" Nullable="false" />
+    <Property Name="correspondiente" Type="int" Nullable="false" />
     <Property Name="comentarios" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
 </Schema></edmx:StorageModels>
@@ -146,7 +146,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="año" Type="Int32" Nullable="false" />
-          <Property Name="mes" Type="String" Nullable="false" />
+          <Property Name="mes" Type="Int32" Nullable="false" />
           <Property Name="montototal" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="salida">
@@ -165,8 +165,8 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="empleado" Type="String" Nullable="false" />
-          <Property Name="desde" Type="String" Nullable="false" />
-          <Property Name="hasta" Type="String" Nullable="false" />
+          <Property Name="desde" Type="DateTime" Nullable="false" />
+          <Property Name="hasta" Type="DateTime" Nullable="false" />
           <Property Name="comentarios" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="licencias">
@@ -175,8 +175,8 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="empleado" Type="String" Nullable="false" />
-          <Property Name="desde" Type="String" Nullable="false" />
-          <Property Name="hasta" Type="String" Nullable="false" />
+          <Property Name="desde" Type="DateTime" Nullable="false" />
+          <Property Name="hasta" Type="DateTime" Nullable="false" />
           <Property Name="motivo" Type="String" Nullable="false" />
           <Property Name="comentarios" Type="String" Nullable="false" />
         </EntityType>
@@ -186,9 +186,9 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="empleado" Type="String" Nullable="false" />
-          <Property Name="desde" Type="String" Nullable="false" />
-          <Property Name="hasta" Type="String" Nullable="false" />
-          <Property Name="correspondiente" Type="String" Nullable="false" />
+          <Property Name="desde" Type="DateTime" Nullable="false" />
+          <Property Name="hasta" Type="DateTime" Nullable="false" />
+          <Property Name="correspondiente" Type="Int32" Nullable="false" />
           <Property Name="comentarios" Type="String" Nullable="false" />
         </EntityType>
       </Schema>

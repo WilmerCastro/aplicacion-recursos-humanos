@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Gestion_de_Recursos_Humanos.Models.nominas>
+
+@{
+    ViewBag.Title = "VerNomina";
+}
+
+<h2>Buscar Nóminas</h2>
+
+<head>
+    <style>
+        p{
+            display: inline-block;
+        }
+  
+
+    </style>
+    </head>
+
+<p id="1">
+
+@using (Html.BeginForm("VerNomina", "empleados", FormMethod.Get))
+{
+    <text> <strong> Por Año:</strong> </text>
+    @Html.TextBox("fechaaño")
+    <input type="submit" value="Buscar" />
+}
+    </p>
+<p id="2">
+@using (Html.BeginForm("VerNomina", "empleados", FormMethod.Get))
+{
+    <text> <strong> Por Mes: </strong> </text>
+    @Html.TextBox("fechames")
+    <input type="submit" value="Buscar" />
+}
+    </p>
+    
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.año)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.montototal)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.año)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.montototal)
+            </td>
+        </tr>
+    }
+
+</table>
