@@ -461,6 +461,140 @@ namespace Gestion_de_Recursos_Humanos.Controllers
             db.SaveChanges();
             return RedirectToAction("licencias");
         }
+        [HttpGet]
+        public ActionResult VerNomina(string fechaaño, string fechames)
+        {
+
+            var nomina = from s in db.nominasSet
+                         select s;
+
+
+
+            if ((!String.IsNullOrEmpty(fechaaño)))
+            {
+                DateTime newFecha = DateTime.Parse(fechaaño);
+
+                nomina = nomina.Where(s => s.año.Equals(newFecha));
+            }
+
+            if ((!String.IsNullOrEmpty(fechames)))
+            {
+                DateTime newFecha = DateTime.Parse(fechames);
+
+                nomina = nomina.Where(s => s.mes.Equals(newFecha));
+            }
+
+            return View(nomina.ToList());
+        }
+
+        [HttpGet]
+        public ActionResult VerEmpleados(string nombree, string departamentto)
+        {
+
+            var empleaddo = from s in db.empleadosSet
+                            select s;
+
+
+
+            if ((!String.IsNullOrEmpty(nombree)))
+            {
+
+                empleaddo = empleaddo.Where(s => s.nombre.Contains(nombree));
+            }
+
+            if ((!String.IsNullOrEmpty(departamentto)))
+            {
+
+                empleaddo = empleaddo.Where(s => s.departamento.Contains(departamentto));
+            }
+
+            return View(empleaddo.ToList().Where(s => s.estatus.Equals("Activo")));
+        }
+
+
+        public ActionResult VerSalidas()
+        {
+
+            return View(db.salidaSet.ToList());
+        }
+        public ActionResult VerEntradasMes(string mes)
+        {
+            // empleados dbentrada = new empleados();
+            //   DateTime mmes;
+
+            // DateTime fechames = new DateTime();
+            //   DateTime newFecha = new DateTime();
+
+
+            //   fechames = DateTime.Parse(dbentrada.fechaingreso);
+            //  newFecha = DateTime.Parse(mes);
+
+
+            //   mmes = DateTime.Parse(dbentrada.fechaingreso);
+
+            // string  mess = mmes.Month.ToString();
+
+            var mensual = from s in db.empleadosSet
+                          select s;
+
+            // string fechasinaño = dbentrada.fechaingreso.Remove(0, 5);
+            //  string fechasindia = fechasinaño.Remove(2, 3);
+
+            if ((!String.IsNullOrEmpty(mes)))
+            {
+
+                mensual = mensual.Where(s => ((s.fechaingreso.Remove(0, 5)).Remove(2, 3)).Contains(mes));
+
+            }
+
+            //   var mensual1 = mensual.Where(s => s.estatus.Equals("Activo"));
+
+            return View(mensual.ToList().Where(s => s.estatus.Equals("Activo")));
+        }
+
+        public ActionResult VerSalidasMes(string mes)
+        {
+
+
+            var mensual = from s in db.salidaSet
+                          select s;
+
+
+            if ((!String.IsNullOrEmpty(mes)))
+            {
+
+                mensual = mensual.Where(s => ((s.fechasalida.Remove(0, 5)).Remove(2, 3)).Contains(mes));
+
+            }
+
+            return View(mensual.ToList());
+        }
+        
+
+        public ActionResult VerPermisos(string empleado1)
+        {
+
+            var permiso = from s in db.permisosSet
+                          select s;
+
+
+
+            if ((!String.IsNullOrEmpty(empleado1)))
+            {
+
+                permiso = permiso.Where(s => s.empleado.Contains(empleado1));
+            }
+
+            return View(permiso.ToList());
+        }
+        public ActionResult SobreNosotros()
+        {
+            return View();
+        }
+        public ActionResult contactenos()
+        {
+            return View();
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

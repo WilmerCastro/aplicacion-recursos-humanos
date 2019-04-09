@@ -1,0 +1,101 @@
+﻿@model IEnumerable<Gestion_de_Recursos_Humanos.Models.empleados>
+
+@{
+    ViewBag.Title = "VerEmpleados";
+}
+
+<h2>Buscar Empleados</h2>
+
+
+<head>
+    <style>
+        p {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<p id="1">
+
+    @using (Html.BeginForm("VerEmpleados", "empleados", FormMethod.Get))
+    {
+        <text> <strong> Buscar por nombre:</strong> </text>
+        @Html.TextBox("nombree")
+        <input type="submit" value="Buscar" />
+    }
+</p>
+<p id="2">
+    @using (Html.BeginForm("VerEmpleados", "empleados", FormMethod.Get))
+    {
+        <text> <strong>  Buscar por departamento: </strong> </text>
+        @Html.TextBox("departamentto")
+        <input type="submit" value="Buscar" />
+    }
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codigoempleado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.departamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cargo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaingreso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estatus)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigoempleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.departamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cargo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaingreso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.salario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estatus)
+            </td>
+        </tr>
+    }
+
+</table>

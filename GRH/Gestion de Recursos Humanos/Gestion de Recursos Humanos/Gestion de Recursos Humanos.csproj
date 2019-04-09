@@ -265,6 +265,14 @@
     <Content Include="Views\empleados\agregarLicencias.cshtml" />
     <Content Include="Views\empleados\editarLicencias.cshtml" />
     <Content Include="Views\empleados\eliminarLicencias.cshtml" />
+    <Content Include="Views\empleados\VerNomina.cshtml" />
+    <Content Include="Views\empleados\VerEmpleados.cshtml" />
+    <Content Include="Views\empleados\VerSalidas.cshtml" />
+    <Content Include="Views\empleados\VerPermisos.cshtml" />
+    <Content Include="Views\empleados\SobreNosotros.cshtml" />
+    <Content Include="Views\empleados\contactenos.cshtml" />
+    <Content Include="Views\empleados\VerEntradasMes.cshtml" />
+    <Content Include="Views\empleados\VerSalidasMes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
