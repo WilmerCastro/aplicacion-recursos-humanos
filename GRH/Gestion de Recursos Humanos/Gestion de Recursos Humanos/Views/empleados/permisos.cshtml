@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Gestion_de_Recursos_Humanos.Models.permisos>
+
+@{
+    ViewBag.Title = "permisos";
+}
+
+<h2 style="text-align:center">Permisos</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.empleado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.desde)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hasta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comentarios)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.empleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.desde)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hasta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.comentarios)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "editarPermisos", new { id = item.Id }) |
+
+                @Html.ActionLink("Delete", "eliminarPermisos", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+<input type="submit" onclick="location.href='@Url.Action("agregarPermisos", "empleados")'" value="Agregar Permiso a Empleado" class="btn btn-primary" style="float:right" />

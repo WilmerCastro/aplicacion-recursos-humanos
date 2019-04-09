@@ -114,7 +114,19 @@ namespace Gestion_de_Recursos_Humanos.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
+        public JsonResult IsProductNameExist(string codigodepartamento, int? Id)
+        {
+            var validateName = db.departamentosSet.FirstOrDefault
+                                (x => x.codigodepartamento == codigodepartamento && x.Id != Id);
+            if (validateName != null)
+            {
+                return Json(false, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)

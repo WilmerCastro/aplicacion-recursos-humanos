@@ -4,15 +4,13 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 style="margin-top:5%; text-align:center">Gestor de Departamentos</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.codigodepartamento)
+            @Html.DisplayName("Codigo de Departamento")
         </th>
         <th>
             @Html.DisplayNameFor(model => model.nombre)
@@ -29,11 +27,12 @@
             @Html.DisplayFor(modelItem => item.nombre)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Elimnar", "Delete", new { id=item.Id })
         </td>
     </tr>
 }
 
 </table>
+<input type="submit" onclick="location.href='@Url.Action("Create", "departamentos")'" value="Registrar Nuevo Departamento" class="btn btn-primary" style="float:right" />

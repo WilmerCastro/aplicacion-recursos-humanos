@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Gestion_de_Recursos_Humanos.Models.licencias>
+
+@{
+    ViewBag.Title = "licencias";
+}
+
+<h2 style="text-align:center">licencias</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.empleado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.desde)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hasta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.motivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.comentarios)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.empleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.desde)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hasta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.motivo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.comentarios)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "editarLicencias", new { id = item.Id }) |
+
+                @Html.ActionLink("Eliminar", "eliminarLicencias", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+<input type="submit" onclick="location.href='@Url.Action("agregarLicencias", "empleados")'" value="Agregar Licencia a Empleado" class="btn btn-primary" style="float:right" />

@@ -11,10 +11,16 @@ namespace Gestion_de_Recursos_Humanos.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+    using System.Web.Mvc;
+
     public partial class departamentos
     {
         public int Id { get; set; }
+        [Required]
+        [StringLength(50)]
+        [Remote("IsProductNameExist", "departamentos", AdditionalFields = "Id",
+               ErrorMessage = "Este codigo de departamento ya esta en uso")]
         public string codigodepartamento { get; set; }
         public string nombre { get; set; }
     }

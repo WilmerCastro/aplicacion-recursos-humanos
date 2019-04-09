@@ -251,6 +251,20 @@
     <Content Include="Views\cargos\Edit.cshtml" />
     <Content Include="Views\cargos\Index.cshtml" />
     <Content Include="Views\empleados\calculoNomina.cshtml" />
+    <Content Include="Views\empleados\salidaEmpleados.cshtml" />
+    <Content Include="Views\empleados\inactivarEmpleado.cshtml" />
+    <Content Include="Views\empleados\vacaciones.cshtml" />
+    <Content Include="Views\empleados\agregarVacaciones.cshtml" />
+    <Content Include="Views\empleados\editarVacaciones.cshtml" />
+    <Content Include="Views\empleados\eliminarVacaciones.cshtml" />
+    <Content Include="Views\empleados\permisos.cshtml" />
+    <Content Include="Views\empleados\agregarPermisos.cshtml" />
+    <Content Include="Views\empleados\editarPermisos.cshtml" />
+    <Content Include="Views\empleados\eliminarPermisos.cshtml" />
+    <Content Include="Views\empleados\licencias.cshtml" />
+    <Content Include="Views\empleados\agregarLicencias.cshtml" />
+    <Content Include="Views\empleados\editarLicencias.cshtml" />
+    <Content Include="Views\empleados\eliminarLicencias.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

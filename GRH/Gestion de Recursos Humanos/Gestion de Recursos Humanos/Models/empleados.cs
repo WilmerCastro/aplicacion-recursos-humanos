@@ -36,5 +36,7 @@ namespace Gestion_de_Recursos_Humanos.Models
         public string fechaingreso { get; set; }
         public int salario { get; set; }
         public string estatus { get; set; }
+
+       
     }
 }

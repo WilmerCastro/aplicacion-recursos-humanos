@@ -20,4 +20,17 @@ namespace Gestion_de_Recursos_Humanos.Models
         public string motivo { get; set; }
         public string fechasalida { get; set; }
     }
+    public enum TipoSal
+    {
+        Renuncia,
+        Despido,
+        Desahucio
+    }
+
+    public enum estatus
+    {
+        Inactivo,
+        Activo
+    }
+  
 }

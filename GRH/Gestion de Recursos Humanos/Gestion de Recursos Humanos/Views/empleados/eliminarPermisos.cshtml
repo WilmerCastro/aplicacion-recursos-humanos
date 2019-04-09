@@ -1,0 +1,56 @@
+﻿@model Gestion_de_Recursos_Humanos.Models.permisos
+
+@{
+    ViewBag.Title = "eliminarPermisos";
+}
+
+<h2>eliminarPermisos</h2>
+
+<h3>Seguro que quieres eliminar este permiso?</h3>
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.empleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.empleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.desde)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.desde)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hasta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hasta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.comentarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.comentarios)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Si, estoy seguro" class="btn btn-default" /> |
+            @Html.ActionLink("volver a lista", "permisos")
+        </div>
+    }
+</div>

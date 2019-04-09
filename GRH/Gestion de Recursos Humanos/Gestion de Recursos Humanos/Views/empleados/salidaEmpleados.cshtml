@@ -1,40 +1,40 @@
 ﻿@model IEnumerable<Gestion_de_Recursos_Humanos.Models.empleados>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "salidaEmpleados";
 }
 
-<h2 style="text-align:center;margin-top:5%">Gestor de Empleados</h2>
+<h2 style="text-align:center;margin-top:3%">Salida de Empleados</h2>
 
 
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayName("Codigo de Empleado")
+            @Html.DisplayNameFor(model => model.codigoempleado)
         </th>
         <th>
-            @Html.DisplayName("Nombre")
+            @Html.DisplayNameFor(model => model.nombre)
         </th>
         <th>
-            @Html.DisplayName("Apellido")
+            @Html.DisplayNameFor(model => model.apellido)
         </th>
         <th>
-            @Html.DisplayName("Telefono")
+            @Html.DisplayNameFor(model => model.telefono)
         </th>
         <th>
-            @Html.DisplayName("Departamento")
+            @Html.DisplayNameFor(model => model.departamento)
         </th>
         <th>
-            @Html.DisplayName("Cargo")
+            @Html.DisplayNameFor(model => model.cargo)
         </th>
         <th>
-            @Html.DisplayName("Fecha de Ingreso")
+            @Html.DisplayNameFor(model => model.fechaingreso)
         </th>
         <th>
-            @Html.DisplayName("Salario")
+            @Html.DisplayNameFor(model => model.salario)
         </th>
         <th>
-            @Html.DisplayName("Estatus")
+            @Html.DisplayNameFor(model => model.estatus)
         </th>
         <th></th>
     </tr>
@@ -69,12 +69,11 @@
             @Html.DisplayFor(modelItem => item.estatus)
         </td>
         <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Detalles", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id })
+           
+            @Html.ActionLink("Inactivar Empleado", "inactivarEmpleado", new { id=item.Id }) 
+          
         </td>
     </tr>
 }
 
 </table>
-<input type="submit" onclick="location.href='@Url.Action("Create", "empleados")'" value="Registrar Nuevo Empleado" class="btn btn-primary" style="float:right" />
